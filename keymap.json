@@ -1,4 +1,6 @@
 [
+    // Disable Overwrite
+    {},
     // Window
     {
         "context": "",
@@ -15,7 +17,7 @@
             "alt-cmd-0": "pane::SplitVertical",
             "cmd-0": "pane::SplitHorizontal",
             "alt-cmd-w": "workspace::CloseInactiveTabsAndPanes",
-            "cmd-w": "workspace::CloseInactiveTabsAndPanes",
+            "cmd-w": "pane::CloseActiveItem",
             "cmd-shift-f": "pane::DeploySearch",
             "cmd-shift-r": ["pane::DeploySearch", { "replace_enabled": true }]
         }
@@ -175,7 +177,6 @@
         "bindings": {
             "cmd-u": "editor::UndoSelection",
             "cmd-shift-u": "editor::RedoSelection",
-            "ctrl-j": "editor::JoinLines",
             "ctrl-alt-backspace": "editor::DeleteToPreviousSubwordStart",
             "ctrl-alt-h": "editor::DeleteToPreviousSubwordStart",
             "ctrl-alt-delete": "editor::DeleteToNextSubwordEnd",
@@ -740,7 +741,6 @@
             "h": "vim::Left",
             "backspace": "vim::WrappingLeft",
             "down": "vim::Down",
-            "ctrl-j": "vim::Down",
             "j": "vim::Down",
             "ctrl-m": "vim::NextLineStart",
             "+": "vim::NextLineStart",
@@ -788,8 +788,8 @@
             "[ shift-b": ["pane::ActivateItem", 0],
             "] space": "vim::InsertEmptyLineBelow",
             "[ space": "vim::InsertEmptyLineAbove",
-            "[ e": "editor::MoveLineUp",
-            "] e": "editor::MoveLineDown",
+            "K": "editor::MoveLineUp",
+            "J": "editor::MoveLineDown",
 
             // Word motions
             "w": "vim::NextWordStart",
@@ -853,8 +853,7 @@
             "shift-v": "vim::ToggleVisualLine",
             "ctrl-g": "vim::ShowLocation",
             "ctrl-v": "vim::ToggleVisualBlock",
-            "ctrl-q": "vim::ToggleVisualBlock",
-            "shift-k": "editor::Hover",
+            "shift-d": "editor::Hover",
             "shift-r": "vim::ToggleReplace",
             "0": "vim::StartOfLine",
             "home": "vim::StartOfLine",
@@ -1053,8 +1052,6 @@
             "shift-a": "vim::InsertAfter",
             "g shift-i": "vim::VisualInsertFirstNonWhiteSpace",
             "g shift-a": "vim::VisualInsertEndOfLine",
-            "shift-j": "vim::JoinLines",
-            "g shift-j": "vim::JoinLinesNoWhitespace",
             "r": "vim::PushReplace",
             "ctrl-c": "vim::SwitchToNormalMode",
             "ctrl-[": "vim::SwitchToNormalMode",
@@ -1099,7 +1096,7 @@
             "ctrl-r": "vim::PushRegister",
             "insert": "vim::ToggleReplace",
             "ctrl-o": "vim::TemporaryNormal",
-            "ctrl-s": "editor::ShowSignatureHelp"
+            "ctrl-s": ["workspace::SendKeystrokes", "escape ctrl-s"]
         }
     },
     {
@@ -1107,15 +1104,13 @@
         "bindings": {
             "escape": "editor::Cancel",
             "shift-d": "vim::DeleteToEndOfLine",
-            "shift-j": "vim::JoinLines",
             "shift-y": "vim::YankLine",
             "shift-i": "vim::InsertFirstNonWhitespace",
             "shift-a": "vim::InsertEndOfLine",
             "o": "vim::InsertLineBelow",
             "shift-o": "vim::InsertLineAbove",
             "~": "vim::ChangeCase",
-            "ctrl-a": "vim::Increment",
-            "ctrl-x": "vim::Decrement",
+            "ctrl-a": "editor::SelectAll",
             "p": "vim::Paste",
             "shift-p": ["vim::Paste", { "before": true }],
             "u": "vim::Undo",

@@ -8,7 +8,7 @@
     "theme": {
         "mode": "system",
         "light": "One Light",
-        "dark": "Ayu Dark"
+        "dark": "MJStudioDark"
     },
     "icon_theme": "Zed (Default)",
     // The name of a base set of key bindings to use.
@@ -77,7 +77,7 @@
         "border_size": 0.0,
         // Opacity of the inactive panes. 0 means transparent, 1 means opaque.
         // Values are clamped to the [0.0, 1.0] range.
-        "inactive_opacity": 0.8
+        "inactive_opacity": 0.6
     },
     // Layout mode of the bottom dock. Defaults to "contained"
     //   choices: contained, full, left_aligned, right_aligned
@@ -356,7 +356,7 @@
         // Whether to show agent review buttons in the editor toolbar.
         "agent_review": true,
         // Whether to show code action buttons in the editor toolbar.
-        "code_actions": false
+        "code_actions": true
     },
     // Titlebar related settings
     "title_bar": {
@@ -436,7 +436,7 @@
         // Whether to show fold buttons in the gutter.
         "folds": true,
         // Minimum number of characters to reserve space for in the gutter.
-        "min_line_number_digits": 4
+        "min_line_number_digits": 3
     },
     "indent_guides": {
         // Whether to show indent guides in the editor.
@@ -499,11 +499,11 @@
     // When enabled, automatically adjusts search case sensitivity based on your query.
     // If your search query contains any uppercase letters, the search becomes case-sensitive;
     // if it contains only lowercase letters, the search becomes case-insensitive.
-    "use_smartcase_search": false,
+    "use_smartcase_search": true,
     // Inlay hint related settings
     "inlay_hints": {
         // Global switch to toggle hints on and off, switched off by default.
-        "enabled": false,
+        "enabled": true,
         // Toggle certain types of hints on and off, all switched on by default.
         "show_type_hints": true,
         "show_parameter_hints": true,
@@ -515,7 +515,7 @@
         "show_background": false,
         // Time to wait after editing the buffer, before requesting the hints,
         // set to 0 to disable debouncing.
-        "edit_debounce_ms": 700,
+        "edit_debounce_ms": 400,
         // Time to wait after scrolling the buffer, before requesting the hints,
         // set to 0 to disable debouncing.
         "scroll_debounce_ms": 50,
@@ -550,7 +550,7 @@
         // Whether to show the git status in the project panel.
         "git_status": true,
         // Amount of indentation for nested items.
-        "indent_size": 20,
+        "indent_size": 15,
         // Whether to reveal it in the project panel automatically,
         // when a corresponding project entry becomes active.
         // Gitignored entries are never auto revealed.
@@ -599,7 +599,7 @@
             "show": "always"
         },
         // Whether to hide the root entry when only one folder is open in the window.
-        "hide_root": false
+        "hide_root": true
     },
     "outline_panel": {
         // Whether to show the outline panel button in the status bar
@@ -667,7 +667,7 @@
         // When to show the chat panel button in the status bar.
         // Can be 'never', 'always', or 'when_in_call',
         // or a boolean (interpreted as 'never'/'always').
-        "button": "when_in_call",
+        "button": "always",
         // Where to the chat panel. Can be 'left' or 'right'.
         "dock": "right",
         // Default width of the chat panel.
