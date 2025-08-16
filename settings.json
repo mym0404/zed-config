@@ -77,7 +77,7 @@
         "border_size": 0.0,
         // Opacity of the inactive panes. 0 means transparent, 1 means opaque.
         // Values are clamped to the [0.0, 1.0] range.
-        "inactive_opacity": 0.5
+        "inactive_opacity": 0.8
     },
     // Layout mode of the bottom dock. Defaults to "contained"
     //   choices: contained, full, left_aligned, right_aligned

@@ -1,4 +1,23 @@
 [
+    // disable & remap
+    {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-h": null,
+            "ctrl-j": null,
+            "ctrl-k": null,
+            "ctrl-l": null
+        }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-h": "workspace::ActivatePaneLeft",
+            "ctrl-j": "workspace::ActivatePaneDown",
+            "ctrl-k": "workspace::ActivatePaneUp",
+            "ctrl-l": "workspace::ActivatePaneRight"
+        }
+    },
     // Bindings from VS Code
     {
         "context": "Editor",
@@ -6,10 +25,7 @@
         "bindings": {
             "f6": "editor::Rename",
             "ctrl-space": "editor::ShowCompletions",
-            "ctrl-shift-space": "editor::ShowWordCompletions",
-            "f1": "editor::RevealInFileManager",
-            "cmd-k p": "workspace::CopyPath",
-            "shift-\\": "pane::SplitRight"
+            "ctrl-shift-space": "editor::ShowWordCompletions"
         }
     },
     {
@@ -39,6 +55,33 @@
         }
     },
     {
+        "context": "ProjectPanel",
+        "bindings": {
+            "cmd-1": "workspace::ToggleLeftDock"
+        }
+    },
+    {
+        "context": "!ProjectPanel",
+        "bindings": {
+            "cmd-1": "project_panel::ToggleFocus"
+        }
+    },
+    {
+        "context": "Terminal",
+        "bindings": {
+            "cmd-5": "workspace::ToggleRightDock",
+            "cmd-t": "workspace::NewTerminal",
+            "cmd-[": "pane::ActivatePreviousItem",
+            "cmd-]": "pane::ActivateNextItem"
+        }
+    },
+    {
+        "context": "!Terminal",
+        "bindings": {
+            "cmd-5": "terminal_panel::ToggleFocus"
+        }
+    },
+    {
         "context": "Workspace",
         "use_key_equivalents": true,
         "bindings": {
@@ -48,18 +91,10 @@
                 "projects::OpenRecent",
                 { "create_new_window": false }
             ],
-            "cmd-ctrl-b": "git::Branch",
-            "cmd-5": "workspace::NewTerminal",
             "ctrl-s": "workspace::Save",
             "alt-shift-enter": "toast::RunAction",
             "cmd-shift-s": "workspace::SaveAs",
             "cmd-shift-n": "workspace::NewWindow",
-            "ctrl-`": "terminal_panel::ToggleFocus",
-            "cmd-b": "workspace::ToggleLeftDock",
-            "cmd-alt-b": "workspace::ToggleRightDock",
-            "cmd-r": "workspace::ToggleRightDock",
-            "cmd-j": "workspace::ToggleBottomDock",
-            "alt-cmd-y": "workspace::CloseAllDocks",
             // For 0px parameter, uses UI font size value.
             "ctrl-alt-0": "workspace::ResetActiveDockSize",
             "ctrl-alt--": ["workspace::DecreaseActiveDockSize", { "px": 0 }],
@@ -68,9 +103,8 @@
             "ctrl-alt-_": ["workspace::DecreaseOpenDocksSize", { "px": 0 }],
             "ctrl-alt-+": ["workspace::IncreaseOpenDocksSize", { "px": 0 }],
             "cmd-shift-f": "pane::DeploySearch",
-            "cmd-shift-h": ["pane::DeploySearch", { "replace_enabled": true }],
-            "cmd-shift-t": "pane::ReopenClosedItem",
-            "cmd-k cmd-s": "zed::OpenKeymapEditor",
+            "cmd-shift-r": ["pane::DeploySearch", { "replace_enabled": true }],
+            "ctrl-alt-cmd-k": "zed::OpenKeymapEditor",
             "cmd-k cmd-t": "theme_selector::Toggle",
             "ctrl-alt-cmd-p": "settings_profile_selector::Toggle",
             "cmd-t": "project_symbols::Toggle",
@@ -78,7 +112,6 @@
             "ctrl-tab": "tab_switcher::Toggle",
             "ctrl-shift-tab": ["tab_switcher::Toggle", { "select_last": true }],
             "cmd-shift-p": "command_palette::Toggle",
-            "cmd-shift-e": "project_panel::ToggleFocus",
             "cmd-shift-b": "outline_panel::ToggleFocus",
             "ctrl-shift-g": "git_panel::ToggleFocus",
             "cmd-shift-d": "debug_panel::ToggleFocus",
@@ -86,12 +119,10 @@
             "cmd-alt-s": "workspace::SaveAll",
             "cmd-k m": "language_selector::Toggle",
             "escape": "workspace::Unfollow",
-            "cmd-k cmd-left": "workspace::ActivatePaneLeft",
-            "cmd-k cmd-right": "workspace::ActivatePaneRight",
-            "cmd-k cmd-up": "workspace::ActivatePaneUp",
-            "cmd-k cmd-down": "workspace::ActivatePaneDown",
-            "cmd-k shift-left": "workspace::SwapPaneLeft",
-            "cmd-k shift-right": "workspace::SwapPaneRight",
+            "ctrl-h": "workspace::ActivatePaneLeft",
+            "ctrl-l": "workspace::ActivatePaneRight",
+            "ctrl-k": "workspace::ActivatePaneUp",
+            "ctrl-j": "workspace::ActivatePaneDown",
             "cmd-k shift-up": "workspace::SwapPaneUp",
             "cmd-k shift-down": "workspace::SwapPaneDown",
             "cmd-shift-x": "zed::Extensions",
@@ -104,7 +135,6 @@
         "use_key_equivalents": true,
         "bindings": {
             "cmd-n": "workspace::NewFile",
-            "cmd-shift-r": "task::Spawn",
             "cmd-alt-r": "task::Rerun",
             "ctrl-alt-shift-r": ["task::Spawn", { "reveal_target": "center" }]
             // also possible to spawn tasks by name:
