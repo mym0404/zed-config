@@ -1,5 +1,5 @@
 [
-    // window related commands (ctrl-w X)
+    // Window
     {
         "context": "",
         "bindings": {
@@ -14,10 +14,65 @@
             "ctrl-l": "workspace::ActivatePaneRight",
             "alt-cmd-0": "pane::SplitVertical",
             "cmd-0": "pane::SplitHorizontal",
-            "alt-cmd-w": "workspace::CloseInactiveTabsAndPanes"
+            "alt-cmd-w": "workspace::CloseInactiveTabsAndPanes",
+            "cmd-w": "workspace::CloseInactiveTabsAndPanes",
+            "cmd-shift-f": "pane::DeploySearch",
+            "cmd-shift-r": ["pane::DeploySearch", { "replace_enabled": true }]
         }
     },
-    // Bindings from VS Code
+    {
+        "context": "VimControl && vim_mode == normal",
+        "bindings": {
+            "space b o": "workspace::CloseInactiveTabsAndPanes",
+            "space b d": "pane::CloseActiveItem"
+        }
+    },
+    {
+        "context": "ProjectPanel",
+        "bindings": {
+            "cmd-1": "workspace::ToggleLeftDock"
+        }
+    },
+    {
+        "context": "!ProjectPanel",
+        "bindings": {
+            "cmd-1": "project_panel::ToggleFocus"
+        }
+    },
+    {
+        "context": "GitPanel",
+        "bindings": {
+            "cmd-2": "workspace::ToggleLeftDock"
+        }
+    },
+    {
+        "context": "!GitPanel",
+        "bindings": {
+            "cmd-2": "git_panel::ToggleFocus"
+        }
+    },
+    {
+        "context": "!Editor",
+        "bindings": {
+            "cmd-4": "editor::ToggleFocus"
+        }
+    },
+    {
+        "context": "Terminal",
+        "bindings": {
+            "cmd-5": "workspace::ToggleRightDock",
+            "cmd-t": "workspace::NewTerminal",
+            "cmd-[": "pane::ActivatePreviousItem",
+            "cmd-]": "pane::ActivateNextItem"
+        }
+    },
+    {
+        "context": "!Terminal",
+        "bindings": {
+            "cmd-5": "terminal_panel::ToggleFocus"
+        }
+    },
+    // Editor
     {
         "context": "Editor",
         "use_key_equivalents": true,
@@ -54,33 +109,6 @@
         }
     },
     {
-        "context": "ProjectPanel",
-        "bindings": {
-            "cmd-1": "workspace::ToggleLeftDock"
-        }
-    },
-    {
-        "context": "!ProjectPanel",
-        "bindings": {
-            "cmd-1": "project_panel::ToggleFocus"
-        }
-    },
-    {
-        "context": "Terminal",
-        "bindings": {
-            "cmd-5": "workspace::ToggleRightDock",
-            "cmd-t": "workspace::NewTerminal",
-            "cmd-[": "pane::ActivatePreviousItem",
-            "cmd-]": "pane::ActivateNextItem"
-        }
-    },
-    {
-        "context": "!Terminal",
-        "bindings": {
-            "cmd-5": "terminal_panel::ToggleFocus"
-        }
-    },
-    {
         "context": "Workspace",
         "use_key_equivalents": true,
         "bindings": {
@@ -94,25 +122,9 @@
             "alt-shift-enter": "toast::RunAction",
             "cmd-shift-s": "workspace::SaveAs",
             "cmd-shift-n": "workspace::NewWindow",
-            // For 0px parameter, uses UI font size value.
-            "ctrl-alt-0": "workspace::ResetActiveDockSize",
-            "ctrl-alt--": ["workspace::DecreaseActiveDockSize", { "px": 0 }],
-            "ctrl-alt-=": ["workspace::IncreaseActiveDockSize", { "px": 0 }],
-            "ctrl-alt-)": "workspace::ResetOpenDocksSize",
-            "ctrl-alt-_": ["workspace::DecreaseOpenDocksSize", { "px": 0 }],
-            "ctrl-alt-+": ["workspace::IncreaseOpenDocksSize", { "px": 0 }],
-            "cmd-shift-f": "pane::DeploySearch",
-            "cmd-shift-r": ["pane::DeploySearch", { "replace_enabled": true }],
-            "ctrl-alt-cmd-k": "zed::OpenKeymapEditor",
-            "cmd-k cmd-t": "theme_selector::Toggle",
-            "ctrl-alt-cmd-p": "settings_profile_selector::Toggle",
             "cmd-t": "project_symbols::Toggle",
             "cmd-p": "file_finder::Toggle",
-            "ctrl-tab": "tab_switcher::Toggle",
-            "ctrl-shift-tab": ["tab_switcher::Toggle", { "select_last": true }],
             "cmd-shift-p": "command_palette::Toggle",
-            "cmd-shift-b": "outline_panel::ToggleFocus",
-            "ctrl-shift-g": "git_panel::ToggleFocus",
             "cmd-shift-d": "debug_panel::ToggleFocus",
             "cmd-?": "agent::ToggleFocus",
             "cmd-alt-s": "workspace::SaveAll",
@@ -146,7 +158,7 @@
         "context": "Workspace && debugger_running",
         "use_key_equivalents": true,
         "bindings": {
-            "f5": "zed::NoAction"
+            "f5": null
         }
     },
     {
@@ -859,7 +871,7 @@
             "g r n": "editor::Rename",
             "g r r": "editor::FindAllReferences",
             "g r i": "editor::GoToImplementation",
-            "g r a": "editor::ToggleCodeActions",
+            "space c a": "editor::ToggleCodeActions",
             "g g": "vim::StartOfDocument",
             "g h": "editor::Hover",
             "g B": "editor::BlameHover",
@@ -1068,11 +1080,9 @@
     {
         "context": "vim_mode == insert",
         "bindings": {
-            "ctrl-c": "vim::NormalBefore",
-            "ctrl-[": "vim::NormalBefore",
+            "j k": "vim::NormalBefore",
             "escape": "vim::NormalBefore",
             "ctrl-x": null,
-            "ctrl-x ctrl-o": "editor::ShowCompletions",
             "ctrl-x ctrl-a": "assistant::InlineAssist", // zed specific
             "ctrl-x ctrl-c": "editor::ShowEditPrediction", // zed specific
             "ctrl-x ctrl-l": "editor::ToggleCodeActions", // zed specific
