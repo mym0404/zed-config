@@ -1330,6 +1330,18 @@
         }
     },
     {
+        "context": "vim_mode == normal",
+        "bindings": {
+            "space g r": "git::RestoreFile"
+        }
+    },
+    {
+        "context": "vim_mode == visual",
+        "bindings": {
+            "space g r": "git::Restore"
+        }
+    },
+    {
         "context": "vim_operator == d",
         "bindings": {
             "d": "vim::CurrentLine",
