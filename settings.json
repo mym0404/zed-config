@@ -1086,7 +1086,7 @@
             // The minimum column to display inline diagnostics. This setting can be
             // used to horizontally align inline diagnostics at some column. Lines
             // longer than this value will still push diagnostics further to the right.
-            "min_column": 0,
+            "min_column": 20,
             // The minimum severity of the diagnostics to show inline.
             // Inherits editor's diagnostics' max severity settings when `null`.
             "max_severity": "warning"
@@ -1564,6 +1564,9 @@
         },
         "JavaScript": {
             "language_servers": ["!typescript-language-server", "vtsls", "..."],
+            "code_actions_on_format": {
+                "source.fixAll.eslint": true
+            },
             "prettier": {
                 "allowed": true
             }
@@ -1645,6 +1648,9 @@
         },
         "TSX": {
             "language_servers": ["!typescript-language-server", "vtsls", "..."],
+            "code_actions_on_format": {
+                "source.fixAll.eslint": true
+            },
             "prettier": {
                 "allowed": true
             }
@@ -1718,7 +1724,7 @@
     // and configure default Prettier, used when no project-level Prettier installation is found.
     "prettier": {
         // // Whether to consider prettier formatter or not when attempting to format a file.
-        // "allowed": false,
+        "allowed": true,
         //
         // // Use regular Prettier json configuration.
         // // If Prettier is allowed, Zed will use this for its Prettier instance for any applicable file, if
@@ -1729,9 +1735,9 @@
         // // If Prettier is allowed, Zed will use this for its Prettier instance for any applicable file, if
         // // the project has no other Prettier installed.
         // "trailingComma": "es5",
-        // "tabWidth": 2
+        "tabWidth": 2,
         // "semi": false,
-        // "singleQuote": true
+        "singleQuote": true
     },
     // Settings for auto-closing of JSX tags.
     "jsx_tag_auto_close": {

@@ -1071,6 +1071,7 @@
     {
         "context": "vim_mode == insert",
         "bindings": {
+            "j j": "vim::NormalBefore",
             "j k": "vim::NormalBefore",
             "escape": "vim::NormalBefore",
             "ctrl-x": null,
