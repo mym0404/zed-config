@@ -184,7 +184,7 @@
                 ],
                 "syntax": {
                     "attribute": {
-                        "color": "#A7D5FFff",
+                        "color": "#fff",
                         "font_style": null,
                         "font_weight": null
                     },
@@ -294,12 +294,12 @@
                         "font_weight": null
                     },
                     "punctuation": {
-                        "color": "#ffffffff",
+                        "color": "#fff",
                         "font_style": null,
                         "font_weight": null
                     },
                     "punctuation.bracket": {
-                        "color": "#ffffffff",
+                        "color": "#fff",
                         "font_style": null,
                         "font_weight": null
                     },
@@ -324,7 +324,7 @@
                         "font_weight": null
                     },
                     "string.escape": {
-                        "color": "#8c8b88ff",
+                        "color": "#d2a6ffff",
                         "font_style": null,
                         "font_weight": null
                     },
