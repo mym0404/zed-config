@@ -1332,13 +1332,15 @@
     {
         "context": "vim_mode == normal",
         "bindings": {
-            "space g r": "git::RestoreFile"
+            "space g r": "git::RestoreFile",
+            "space g d": "editor::ToggleSelectedDiffHunks"
         }
     },
     {
         "context": "vim_mode == visual",
         "bindings": {
-            "space g r": "git::Restore"
+            "space g r": "git::Restore",
+            "space g d": "editor::ToggleSelectedDiffHunks"
         }
     },
     {
@@ -1349,7 +1351,6 @@
             "v": "vim::PushForcedMotion", // "d v"
             "o": "editor::ToggleSelectedDiffHunks", // "d o"
             "shift-o": "git::ToggleStaged",
-            "p": "git::Restore", // "d p"
             "u": "git::StageAndNext", // "d u"
             "shift-u": "git::UnstageAndNext" // "d shift-u"
         }
