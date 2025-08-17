@@ -28,7 +28,15 @@
             "space b o": "workspace::CloseInactiveTabsAndPanes",
             "space b d": "pane::CloseActiveItem",
             "space k": ["workspace::SendKeystrokes", "cmd-5 claude enter"],
-            "space g g": ["task::Spawn", { "task_name": "start lazygit" }]
+            "space g g": ["task::Spawn", { "task_name": "start lazygit" }],
+            "space a e": "assistant::InlineAssist",
+            "space a a": "agent::NewThread"
+        }
+    },
+    {
+        "context": "VimControl && vim_mode == visual && !menu",
+        "bindings": {
+            "space a e": "assistant::InlineAssist"
         }
     },
     {
@@ -74,6 +82,30 @@
         "context": "!Terminal",
         "bindings": {
             "cmd-5": "terminal_panel::ToggleFocus"
+        }
+    },
+    {
+        "context": "!Diagnostics",
+        "bindings": {
+            "cmd-4": "diagnostics::Deploy"
+        }
+    },
+    {
+        "context": "Diagnostics",
+        "bindings": {
+            "cmd-4": "pane::CloseActiveItem"
+        }
+    },
+    {
+        "context": "!AgentPanel",
+        "bindings": {
+            "cmd-3": "agent::ToggleFocus"
+        }
+    },
+    {
+        "context": "AgentPanel",
+        "bindings": {
+            "cmd-3": "workspace::ToggleRightDock"
         }
     },
     // Editor
@@ -225,10 +257,18 @@
         }
     },
     {
+        "context": "Editor && edit_prediction_conflict",
+        "bindings": {
+            "tab": "editor::AcceptEditPrediction",
+            "shift-tab": "editor::ShowEditPrediction",
+            "ctrl-cmd-right": "editor::AcceptPartialEditPrediction"
+        }
+    },
+    {
         "context": "Editor && edit_prediction",
         "bindings": {
-            "alt-tab": "editor::AcceptEditPrediction",
             "tab": "editor::AcceptEditPrediction",
+            "shift-tab": "editor::ShowEditPrediction",
             "ctrl-cmd-right": "editor::AcceptPartialEditPrediction"
         }
     },
@@ -1585,26 +1625,9 @@
         }
     },
     {
-        "context": "Editor && edit_prediction",
-        "bindings": {
-            // This is identical to the binding in the base keymap, but the vim bindings above to
-            // "vim::Tab" shadow it, so it needs to be bound again.
-            "tab": "editor::AcceptEditPrediction"
-        }
-    },
-    {
         "context": "MessageEditor > Editor && VimControl",
         "bindings": {
             "enter": "agent::Chat"
-        }
-    },
-    {
-        "context": "os != macos && Editor && edit_prediction_conflict",
-        "bindings": {
-            // alt-l is provided as an alternative to tab/alt-tab. and will be displayed in the UI. This
-            // is because alt-tab may not be available, as it is often used for window switching on Linux
-            // and Windows.
-            "alt-l": "editor::AcceptEditPrediction"
         }
     }
 ]

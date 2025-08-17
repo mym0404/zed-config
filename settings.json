@@ -77,7 +77,7 @@
         "border_size": 0.0,
         // Opacity of the inactive panes. 0 means transparent, 1 means opaque.
         // Values are clamped to the [0.0, 1.0] range.
-        "inactive_opacity": 0.6
+        "inactive_opacity": 0.5
     },
     // Layout mode of the bottom dock. Defaults to "contained"
     //   choices: contained, full, left_aligned, right_aligned
@@ -762,7 +762,7 @@
             // }
         ],
         // When enabled, the agent can run potentially destructive actions without asking for your confirmation.
-        "always_allow_tool_actions": false,
+        "always_allow_tool_actions": true,
         // When enabled, the agent will stream edits.
         "stream_edits": false,
         // When enabled, agent edits will be displayed in single-file editors for review
@@ -1729,7 +1729,7 @@
     // and configure default Prettier, used when no project-level Prettier installation is found.
     "prettier": {
         // // Whether to consider prettier formatter or not when attempting to format a file.
-        // "allowed": true,
+        "allowed": true,
         //
         // // Use regular Prettier json configuration.
         // // If Prettier is allowed, Zed will use this for its Prettier instance for any applicable file, if
@@ -1740,9 +1740,9 @@
         // // If Prettier is allowed, Zed will use this for its Prettier instance for any applicable file, if
         // // the project has no other Prettier installed.
         // "trailingComma": "es5",
-        // "tabWidth": 2,
+        "tabWidth": 2,
         // "semi": false,
-        // "singleQuote": true
+        "singleQuote": true
     },
     // Settings for auto-closing of JSX tags.
     "jsx_tag_auto_close": {

@@ -14,6 +14,23 @@ type ApiResponse<T> = {
     status: Status;
     message?: string;
 };
+enum HttpMethod {
+    GET = "GET",
+    POST = "POST",
+    PUT = "PUT",
+    DELETE = "DELETE",
+}
+
+enum Colleague {
+    JANE = "Jane",
+    JOHN = "John",
+    MARY = "Mary",
+}
+enum Student {
+    JANE = "Jane",
+    JOHN = "John",
+    MARY = "Mary",
+}
 
 // Enum example
 enum Color {
@@ -41,6 +58,10 @@ class UserService implements Repository<User> {
         if (cached) return cached;
 
         try {
+            await fetch(`${this.apiUrl}/users/${id}`, {
+                signal: AbortSignal.timeout(this.timeout),
+            });
+
             const response = await fetch(`${this.apiUrl}/users/${id}`, {
                 signal: AbortSignal.timeout(this.timeout),
             });
