@@ -27,7 +27,8 @@
         "bindings": {
             "space b o": "workspace::CloseInactiveTabsAndPanes",
             "space b d": "pane::CloseActiveItem",
-            "space k": ["workspace::SendKeystrokes", "cmd-5 claude enter"]
+            "space k": ["workspace::SendKeystrokes", "cmd-5 claude enter"],
+            "space g g": ["task::Spawn", { "task_name": "start lazygit" }]
         }
     },
     {
