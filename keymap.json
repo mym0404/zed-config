@@ -772,10 +772,6 @@
             "] shift-m": "vim::NextMethodEnd",
             "[ m": "vim::PreviousMethodStart",
             "[ shift-m": "vim::PreviousMethodEnd",
-            "[ *": "vim::PreviousComment",
-            "[ /": "vim::PreviousComment",
-            "] *": "vim::NextComment",
-            "] /": "vim::NextComment",
             "[ -": "vim::PreviousLesserIndent",
             "[ +": "vim::PreviousGreaterIndent",
             "[ =": "vim::PreviousSameIndent",
@@ -1009,7 +1005,7 @@
             "[ d": "editor::GoToPreviousDiagnostic",
             "] c": "editor::GoToHunk",
             "[ c": "editor::GoToPreviousHunk",
-            "g c": "vim::PushToggleComments"
+            "g c": "vim::ToggleComments"
         }
     },
     {
