@@ -685,7 +685,7 @@
         //
         // Choices: label_color, icon
         // Default: icon
-        "status_style": "icon",
+        "status_style": "label_color",
         // What branch name to use if `init.defaultBranch` is not set
         //
         // Default: main
@@ -1058,7 +1058,7 @@
     //      "lsp_document_colors": "border",
     // 4. Draw a background behind the color text..
     //      "lsp_document_colors": "background",
-    "lsp_document_colors": "background",
+    "lsp_document_colors": "border",
     // Diagnostics configuration.
     "diagnostics": {
         // Whether to show the project diagnostics button in the status bar.
@@ -1569,9 +1569,9 @@
                 "source.fixAll.biome": true,
                 "source.organizeImports.biome": true
             },
-            "formatter": { "language_server": { "name": "biome" } },
+            // "formatter": { "language_server": { "name": "biome" } },
             "prettier": {
-                "allowed": false
+                "allowed": true
             }
         },
         "TSX": {
@@ -1581,7 +1581,7 @@
                 "source.fixAll.biome": true,
                 "source.organizeImports.biome": true
             },
-            "formatter": { "language_server": { "name": "biome" } },
+            // "formatter": { "language_server": { "name": "biome" } },
             "prettier": {
                 "allowed": true
             }
@@ -1593,7 +1593,9 @@
                 "source.fixAll.biome": true,
                 "source.organizeImports.biome": true
             },
-            "formatter": { "language_server": { "name": "biome" } },
+            // "formatter": {
+            //     "language_server": { "name": "biome" }
+            // },
             "prettier": {
                 "allowed": true
             }

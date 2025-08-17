@@ -84,7 +84,8 @@
             "f6": "editor::Rename",
             "ctrl-x": "editor::Format",
             "ctrl-space": "editor::ShowCompletions",
-            "ctrl-shift-space": "editor::ShowWordCompletions"
+            "ctrl-shift-space": "editor::ShowWordCompletions",
+            "cmd-r": "buffer_search::DeployReplace"
         }
     },
     {
