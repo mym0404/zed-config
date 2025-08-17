@@ -23,10 +23,11 @@
         }
     },
     {
-        "context": "VimControl && vim_mode == normal",
+        "context": "VimControl && vim_mode == normal && !menu",
         "bindings": {
             "space b o": "workspace::CloseInactiveTabsAndPanes",
-            "space b d": "pane::CloseActiveItem"
+            "space b d": "pane::CloseActiveItem",
+            "space k": ["workspace::SendKeystrokes", "cmd-5 claude enter"]
         }
     },
     {
@@ -735,6 +736,7 @@
     {
         "context": "VimControl && !menu",
         "bindings": {
+            "t": ["workspace::SendKeystrokes", "y s"],
             "i": ["vim::PushObject", { "around": false }],
             "a": ["vim::PushObject", { "around": true }],
             "left": "vim::Left",
@@ -822,10 +824,6 @@
             "f": [
                 "vim::PushFindForward",
                 { "before": false, "multiline": false }
-            ],
-            "t": [
-                "vim::PushFindForward",
-                { "before": true, "multiline": false }
             ],
             "shift-f": [
                 "vim::PushFindBackward",
@@ -1391,8 +1389,9 @@
         "bindings": {
             "y": "vim::CurrentLine",
             "v": "vim::PushForcedMotion",
-            "s": ["vim::PushAddSurrounds", {}],
-            "f": "workspace::CopyRelativePath"
+            "s": "vim::PushAddSurrounds",
+            "f": "workspace::CopyRelativePath",
+            "l": "editor::CopyFileLocation"
         }
     },
     {
