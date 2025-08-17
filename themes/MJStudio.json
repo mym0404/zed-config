@@ -9,7 +9,7 @@
             "style": {
                 "editor.indent_guide": "#222",
                 "editor.indent_guide_active": "#335",
-                "border": "#ffffff06",
+                "border": "#eeeeee06",
                 "border.variant": "#2d2f34ff",
                 "border.focused": "#1b4a6eff",
                 "border.selected": "#1b4a6eff",
@@ -55,7 +55,7 @@
                 "scrollbar.thumb.border": "#2d2f34ff",
                 "scrollbar.track.background": "#00000000",
                 "scrollbar.track.border": "#11111100",
-                "editor.foreground": "#ffffffff",
+                "editor.foreground": "#eeeeeeff",
                 "editor.background": "#111111ff",
                 "editor.gutter.background": "#111111",
                 "editor.subheader.background": "#111111",
@@ -70,7 +70,7 @@
                 "editor.document_highlight.read_background": "#5ac1fe1a",
                 "editor.document_highlight.write_background": "#66676766",
                 "terminal.background": "#111",
-                "terminal.foreground": "#ffffffff",
+                "terminal.foreground": "#eeeeeeff",
                 "terminal.bright_foreground": "#bfbdb6ff",
                 "terminal.dim_foreground": "#0d1016ff",
                 "terminal.ansi.black": "#0d1016ff",
@@ -249,7 +249,7 @@
                         "font_weight": null
                     },
                     "label": {
-                        "color": "#ffffffff",
+                        "color": "#eeeeeeff",
                         "font_style": null,
                         "font_weight": null
                     },
@@ -269,7 +269,7 @@
                         "font_weight": null
                     },
                     "operator": {
-                        "color": "#ffffffff",
+                        "color": "#eeeeeeff",
                         "font_style": null,
                         "font_weight": null
                     },
@@ -289,7 +289,7 @@
                         "font_weight": null
                     },
                     "property": {
-                        "color": "#ffffffff",
+                        "color": "#eeeeeeff",
                         "font_style": null,
                         "font_weight": null
                     },
@@ -304,7 +304,7 @@
                         "font_weight": null
                     },
                     "punctuation.delimiter": {
-                        "color": "#ffffffff",
+                        "color": "#eeeeeeff",
                         "font_style": null,
                         "font_weight": null
                     },
@@ -364,7 +364,7 @@
                         "font_weight": 700
                     },
                     "variable": {
-                        "color": "#ffffffff",
+                        "color": "#eeeeeeff",
                         "font_style": null,
                         "font_weight": null
                     },
