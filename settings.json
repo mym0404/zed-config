@@ -873,7 +873,7 @@
     //     "autosave": "on_focus_change",
     // 4. Save when idle for a certain amount of time:
     //     "autosave": { "after_delay": {"milliseconds": 500} },
-    "autosave": "off",
+    "autosave": "on_focus_change",
     // Maximum number of tabs per pane. Unset for unlimited.
     "max_tabs": null,
     // Settings related to the editor's tab bar.
@@ -881,7 +881,7 @@
         // Whether or not to show the tab bar in the editor
         "show": true,
         // Whether or not to show the navigation history buttons.
-        "show_nav_history_buttons": true,
+        "show_nav_history_buttons": false,
         // Whether or not to show the tab bar buttons.
         "show_tab_bar_buttons": true
     },
@@ -893,7 +893,7 @@
         // One of: ["right", "left", "hidden"]
         "close_position": "right",
         // Whether to show the file icon for a tab.
-        "file_icons": false,
+        "file_icons": true,
         // Controls the appearance behavior of the tab's close button.
         //
         // 1. Show it just upon hovering the tab. (default)
@@ -902,7 +902,7 @@
         //     "always"
         // 3. Never show it, even if hovering it.
         //     "hidden"
-        "show_close_button": "hover",
+        "show_close_button": "hidden",
         // What to do after closing the current tab.
         //
         // 1. Activate the tab that was open previously (default)
@@ -939,7 +939,7 @@
     // Settings related to the file finder.
     "file_finder": {
         // Whether to show file icons in the file finder.
-        "file_icons": true,
+        "file_icons": false,
         // Determines how much space the file finder can take up in relation to the available window width.
         // There are 5 possible width values:
         //
@@ -984,7 +984,7 @@
     // before saving it.
     "remove_trailing_whitespace_on_save": true,
     // Whether to start a new line with a comment when a previous line is a comment as well.
-    "extend_comment_on_newline": true,
+    "extend_comment_on_newline": false,
     // Removes any lines containing only whitespace at the end of the file and
     // ensures just one newline at the end.
     "ensure_final_newline_on_save": true,
@@ -1034,9 +1034,9 @@
     // Control what info is collected by Zed.
     "telemetry": {
         // Send debug info like crash reports.
-        "diagnostics": true,
+        "diagnostics": false,
         // Send anonymized usage data like what languages you're using Zed with.
-        "metrics": true
+        "metrics": false
     },
     // Whether to disable all AI features in Zed.
     //
@@ -1061,7 +1061,7 @@
     // Diagnostics configuration.
     "diagnostics": {
         // Whether to show the project diagnostics button in the status bar.
-        "button": true,
+        "button": false,
         // Whether to show warnings or not by default.
         "include_warnings": true,
         // Settings for using LSP pull diagnostics mechanism in Zed.
@@ -1250,7 +1250,7 @@
         //         "blinking": "terminal_controlled",
         //  3. Always blink the cursor, ignoring the terminal mode
         //         "blinking": "on",
-        "blinking": "terminal_controlled",
+        "blinking": "on",
         // Default cursor shape for the terminal.
         //  1. A block that surrounds the following character
         //     "block"
@@ -1287,7 +1287,7 @@
         // Whether to keep the text selection after copying it to the clipboard
         "keep_selection_on_copy": false,
         // Whether to show the terminal button in the status bar
-        "button": true,
+        "button": false,
         // Any key-value pairs added to this list will be added to the terminal's
         // environment. Use `:` to separate multiple values.
         "env": {
@@ -1324,7 +1324,7 @@
             //
             // The shell running in the terminal needs to be configured to emit the title.
             // Example: `echo -e "\e]2;New Title\007";`
-            "breadcrumbs": true
+            "breadcrumbs": false
         },
         // Scrollbar-related settings
         "scrollbar": {
@@ -1728,7 +1728,7 @@
         // // If Prettier is allowed, Zed will use this for its Prettier instance for any applicable file, if
         // // the project has no other Prettier installed.
         // "trailingComma": "es5",
-        // "tabWidth": 4,
+        // "tabWidth": 2
         // "semi": false,
         // "singleQuote": true
     },
@@ -1753,11 +1753,10 @@
     // Common language server settings.
     "global_lsp_settings": {
         // Whether to show the LSP servers button in the status bar.
-        "button": true
+        "button": false
     },
     // Jupyter settings
     "jupyter": {
-        "enabled": true
         // Specify the language name as the key and the kernel name as the value.
         // "kernel_selections": {
         //    "python": "conda-base"
@@ -1769,7 +1768,7 @@
         "default_mode": "normal",
         "toggle_relative_line_numbers": false,
         "use_system_clipboard": "always",
-        "use_smartcase_find": false,
+        "use_smartcase_find": true,
         "highlight_on_yank_duration": 200,
         "custom_digraphs": {},
         // Cursor shape for the each mode.
@@ -1876,5 +1875,5 @@
     //     }
     //   }
     // }
-    "profiles": []
+    "profiles": {}
 }
