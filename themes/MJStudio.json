@@ -30,7 +30,7 @@
                 "ghost_element.selected": "#3e4043ff",
                 "ghost_element.disabled": "#1f2127ff",
                 "text": "#eeeeeeff",
-                "text.muted": "#737373",
+                "text.muted": "#cfcfcf",
                 "text.placeholder": "#737373",
                 "text.disabled": "#696a6aff",
                 "text.accent": "#5ac1feff",
