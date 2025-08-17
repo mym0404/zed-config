@@ -1,6 +1,4 @@
 // TypeScript Syntax Highlighting Demo
-import React, { useState, useEffect, useCallback } from "react";
-import type { FC, ReactNode } from "react";
 
 // Type definitions
 interface User {

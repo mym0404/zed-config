@@ -410,7 +410,7 @@
         // Forcefully enable or disable the scrollbar for each axis
         "axes": {
             // When false, forcefully disables the horizontal scrollbar. Otherwise, obey other settings.
-            "horizontal": true,
+            "horizontal": false,
             // When false, forcefully disables the vertical scrollbar. Otherwise, obey other settings.
             "vertical": true
         }

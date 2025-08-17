@@ -52,23 +52,23 @@
                 "scrollbar.thumb.hover_background": "#2d2f34ff",
                 "scrollbar.thumb.border": "#2d2f34ff",
                 "scrollbar.track.background": "#00000000",
-                "scrollbar.track.border": "#1b1e24ff",
-                "editor.foreground": "#ffffffff",
+                "scrollbar.track.border": "#11111100",
+                "editor.foreground": "#fff",
                 "editor.background": "#111111",
                 "editor.gutter.background": "#111111",
                 "editor.subheader.background": "#111111",
                 "editor.active_line.background": "#323232",
                 "editor.highlighted_line.background": "#1f2127ff",
-                "editor.line_number": "#4b4c4e",
-                "editor.active_line_number": "#cbcccd",
+                "editor.line_number": "#828282",
+                "editor.active_line_number": "#e6edf3",
                 "editor.hover_line_number": "#a1a2a5",
                 "editor.invisible": "#666767ff",
                 "editor.wrap_guide": "#bfbdb60d",
                 "editor.active_wrap_guide": "#bfbdb61a",
                 "editor.document_highlight.read_background": "#5ac1fe1a",
                 "editor.document_highlight.write_background": "#66676766",
-                "terminal.background": "#111111ff",
-                "terminal.foreground": "ffffffff",
+                "terminal.background": "#111",
+                "terminal.foreground": "#fff",
                 "terminal.bright_foreground": "#bfbdb6ff",
                 "terminal.dim_foreground": "#0d1016ff",
                 "terminal.ansi.black": "#0d1016ff",
@@ -101,7 +101,7 @@
                 "conflict.border": "#754221ff",
                 "created": "#AFE8AFff",
                 "created.background": "#374A37ff",
-                "created.border": "#374A37ff",
+                "created.border": "#475A47ff",
                 "deleted": "#ef7177ff",
                 "deleted.background": "#48161bff",
                 "deleted.border": "#66272dff",
@@ -122,7 +122,7 @@
                 "info.border": "#1b4a6eff",
                 "modified": "#72A7D7",
                 "modified.background": "#1B415C",
-                "modified.border": "#1B415C",
+                "modified.border": "#2B516C",
                 "predictive": "#5a728bff",
                 "predictive.background": "#294113ff",
                 "predictive.border": "#405c1cff",
@@ -182,7 +182,7 @@
                 ],
                 "syntax": {
                     "attribute": {
-                        "color": "#5ac1feff",
+                        "color": "#A7D5FFff",
                         "font_style": null,
                         "font_weight": null
                     },
@@ -207,7 +207,7 @@
                         "font_weight": null
                     },
                     "constructor": {
-                        "color": "#5ac1feff",
+                        "color": "#A7D5FFff",
                         "font_style": null,
                         "font_weight": null
                     },
@@ -217,12 +217,12 @@
                         "font_weight": null
                     },
                     "emphasis": {
-                        "color": "#5ac1feff",
+                        "color": "#A7D5FFff",
                         "font_style": null,
                         "font_weight": null
                     },
                     "emphasis.strong": {
-                        "color": "#5ac1feff",
+                        "color": "#A7D5FFff",
                         "font_style": null,
                         "font_weight": 700
                     },
@@ -357,7 +357,7 @@
                         "font_weight": 700
                     },
                     "type": {
-                        "color": "#59c2ffff",
+                        "color": "#ffdaad",
                         "font_style": null,
                         "font_weight": null
                     },
@@ -367,7 +367,7 @@
                         "font_weight": null
                     },
                     "variant": {
-                        "color": "#5ac1feff",
+                        "color": "#A7D5FFff",
                         "font_style": null,
                         "font_weight": null
                     }
