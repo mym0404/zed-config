@@ -1333,7 +1333,8 @@
         "context": "vim_mode == normal",
         "bindings": {
             "space g r": "git::RestoreFile",
-            "space g d": "editor::ToggleSelectedDiffHunks"
+            "space g d": "editor::ToggleSelectedDiffHunks",
+            "space g o": "editor::ExpandAllDiffHunks"
         }
     },
     {
