@@ -38,7 +38,7 @@
         "calt": false
     },
     // The default font size for text in the editor
-    "buffer_font_size": 12,
+    "buffer_font_size": 13,
     // The weight of the editor font in standard CSS units from 100 to 900.
     "buffer_font_weight": 400,
     // Set the buffer's line height.
@@ -66,9 +66,9 @@
     // The weight of the UI font in standard CSS units from 100 to 900.
     "ui_font_weight": 400,
     // The default font size for text in the UI
-    "ui_font_size": 12,
+    "ui_font_size": 13,
     // The default font size for text in the agent panel
-    "agent_font_size": 11,
+    "agent_font_size": 14,
     // How much to fade out unused code.
     "unnecessary_code_fade": 0.3,
     // Active pane styling settings.
@@ -1058,7 +1058,7 @@
     //      "lsp_document_colors": "border",
     // 4. Draw a background behind the color text..
     //      "lsp_document_colors": "background",
-    "lsp_document_colors": "border",
+    "lsp_document_colors": "inlay",
     // Diagnostics configuration.
     "diagnostics": {
         // Whether to show the project diagnostics button in the status bar.
@@ -1346,7 +1346,7 @@
         },
         // Set the terminal's font size. If this option is not included,
         // the terminal will default to matching the buffer's font size.
-        // "font_size": 15,
+        "font_size": 13,
         // Set the terminal's font family. If this option is not included,
         // the terminal will default to matching the buffer's font family.
         // "font_family": "Zed Plex Mono",
