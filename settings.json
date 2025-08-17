@@ -1086,10 +1086,10 @@
             // The minimum column to display inline diagnostics. This setting can be
             // used to horizontally align inline diagnostics at some column. Lines
             // longer than this value will still push diagnostics further to the right.
-            "min_column": 20,
+            "min_column": 0,
             // The minimum severity of the diagnostics to show inline.
             // Inherits editor's diagnostics' max severity settings when `null`.
-            "max_severity": "warning"
+            "max_severity": null
         },
         "cargo": {
             // When enabled, Zed disables rust-analyzer's check on save and starts to query
@@ -1562,11 +1562,38 @@
                 "plugins": ["prettier-plugin-java"]
             }
         },
+        "TypeScript": {
+            "language_servers": ["!typescript-language-server", "vtsls", "..."],
+            "code_actions_on_format": {
+                "source.fixAll.eslint": true,
+                "source.fixAll.biome": true,
+                "source.organizeImports.biome": true
+            },
+            "formatter": { "language_server": { "name": "biome" } },
+            "prettier": {
+                "allowed": false
+            }
+        },
+        "TSX": {
+            "language_servers": ["!typescript-language-server", "vtsls", "..."],
+            "code_actions_on_format": {
+                "source.fixAll.eslint": true,
+                "source.fixAll.biome": true,
+                "source.organizeImports.biome": true
+            },
+            "formatter": { "language_server": { "name": "biome" } },
+            "prettier": {
+                "allowed": true
+            }
+        },
         "JavaScript": {
             "language_servers": ["!typescript-language-server", "vtsls", "..."],
             "code_actions_on_format": {
-                "source.fixAll.eslint": true
+                "source.fixAll.eslint": true,
+                "source.fixAll.biome": true,
+                "source.organizeImports.biome": true
             },
+            "formatter": { "language_server": { "name": "biome" } },
             "prettier": {
                 "allowed": true
             }
@@ -1646,30 +1673,6 @@
                 "plugins": ["prettier-plugin-svelte"]
             }
         },
-        "TSX": {
-            "language_servers": ["!typescript-language-server", "vtsls", "..."],
-            "code_actions_on_format": {
-                "source.fixAll.eslint": true
-            },
-            "prettier": {
-                "allowed": true
-            }
-        },
-        "Twig": {
-            "prettier": {
-                "allowed": true
-            }
-        },
-        "TypeScript": {
-            "language_servers": ["!typescript-language-server", "vtsls", "..."],
-            "prettier": {
-                "allowed": true
-            }
-        },
-        "SystemVerilog": {
-            "format_on_save": "off",
-            "use_on_type_format": false
-        },
         "Vue.js": {
             "language_servers": ["vue-language-server", "..."],
             "prettier": {
@@ -1724,7 +1727,7 @@
     // and configure default Prettier, used when no project-level Prettier installation is found.
     "prettier": {
         // // Whether to consider prettier formatter or not when attempting to format a file.
-        "allowed": true,
+        // "allowed": true,
         //
         // // Use regular Prettier json configuration.
         // // If Prettier is allowed, Zed will use this for its Prettier instance for any applicable file, if
@@ -1735,9 +1738,9 @@
         // // If Prettier is allowed, Zed will use this for its Prettier instance for any applicable file, if
         // // the project has no other Prettier installed.
         // "trailingComma": "es5",
-        "tabWidth": 2,
+        // "tabWidth": 2,
         // "semi": false,
-        "singleQuote": true
+        // "singleQuote": true
     },
     // Settings for auto-closing of JSX tags.
     "jsx_tag_auto_close": {
@@ -1756,6 +1759,32 @@
         //         }
         //     }
         // }
+        "biome": {
+            "settings": {
+                "require_config_file": true
+            }
+        },
+        "vtsls": {
+            "settings": {
+                "typescript": {
+                    "inlayHints": {
+                        "parameterNames": { "enabled": "literals" },
+                        "parameterTypes": { "enabled": true },
+                        "variableTypes": { "enabled": true },
+                        "propertyDeclarationTypes": { "enabled": true },
+                        "functionLikeReturnTypes": { "enabled": true },
+                        "enumMemberValues": { "enabled": true }
+                    },
+                    "preferences": {
+                        "importModuleSpecifierPreference": "relative",
+                        "jsxAttributeCompletionStyle": "braces",
+                        "quotePreference": "single",
+                        "includeCompletionsForModuleExports": true,
+                        "importModuleSpecifierEnding": "auto"
+                    }
+                }
+            }
+        }
     },
     // Common language server settings.
     "global_lsp_settings": {

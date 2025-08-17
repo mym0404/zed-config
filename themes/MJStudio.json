@@ -7,6 +7,8 @@
             "name": "MJStudioDark",
             "appearance": "dark",
             "style": {
+                "editor.indent_guide": "#222",
+                "editor.indent_guide_active": "#335",
                 "border": "#ffffff06",
                 "border.variant": "#2d2f34ff",
                 "border.focused": "#1b4a6eff",
@@ -341,6 +343,11 @@
                         "font_style": null,
                         "font_weight": null
                     },
+                    "type": {
+                        "color": "#ffdaad",
+                        "font_style": null,
+                        "font_weight": null
+                    },
                     "tag": {
                         "color": "#CCA06Aff",
                         "font_style": null,
@@ -355,11 +362,6 @@
                         "color": "#bfbdb6ff",
                         "font_style": null,
                         "font_weight": 700
-                    },
-                    "type": {
-                        "color": "#ffdaad",
-                        "font_style": null,
-                        "font_weight": null
                     },
                     "variable": {
                         "color": "#ffffffff",

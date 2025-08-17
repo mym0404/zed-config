@@ -82,6 +82,7 @@
         "bindings": {
             "f1": "pane::RevealInProjectPanel",
             "f6": "editor::Rename",
+            "ctrl-x": "editor::Format",
             "ctrl-space": "editor::ShowCompletions",
             "ctrl-shift-space": "editor::ShowWordCompletions"
         }
@@ -981,8 +982,6 @@
             "y": "vim::PushYank",
             "x": "vim::DeleteRight",
             "shift-x": "vim::DeleteLeft",
-            "ctrl-a": "vim::Increment",
-            "ctrl-x": "vim::Decrement",
             "ctrl-r": "vim::Redo",
             ">": "vim::PushIndent",
             "<": "vim::PushOutdent",
@@ -1074,7 +1073,6 @@
             "j j": "vim::NormalBefore",
             "j k": "vim::NormalBefore",
             "escape": "vim::NormalBefore",
-            "ctrl-x": null,
             "ctrl-x ctrl-a": "assistant::InlineAssist", // zed specific
             "ctrl-x ctrl-c": "editor::ShowEditPrediction", // zed specific
             "ctrl-x ctrl-l": "editor::ToggleCodeActions", // zed specific
@@ -1091,7 +1089,8 @@
             "ctrl-r": "vim::PushRegister",
             "insert": "vim::ToggleReplace",
             "ctrl-o": "vim::TemporaryNormal",
-            "ctrl-s": ["workspace::SendKeystrokes", "escape ctrl-s"]
+            "ctrl-s": ["workspace::SendKeystrokes", "escape ctrl-s"],
+            "ctrl-x": ["workspace::SendKeystrokes", "escape ctrl-x"]
         }
     },
     {
