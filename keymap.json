@@ -80,6 +80,7 @@
         "context": "Editor",
         "use_key_equivalents": true,
         "bindings": {
+            "f1": "pane::RevealInProjectPanel",
             "f6": "editor::Rename",
             "ctrl-space": "editor::ShowCompletions",
             "ctrl-shift-space": "editor::ShowWordCompletions"
@@ -1325,7 +1326,8 @@
         "bindings": {
             "space g r": "git::RestoreFile",
             "space g d": "editor::ToggleSelectedDiffHunks",
-            "space g o": "editor::ExpandAllDiffHunks"
+            "space g o": "editor::ExpandAllDiffHunks",
+            "space c r": "editor::Rename"
         }
     },
     {
@@ -1506,23 +1508,13 @@
         "context": "ProjectPanel && not_editing",
         "bindings": {
             ":": "command_palette::Toggle",
-            "%": "project_panel::NewFile",
             "/": "project_panel::NewSearchInDirectory",
-            "d": "project_panel::NewDirectory",
             "enter": "project_panel::OpenPermanent",
-            "escape": "project_panel::ToggleFocus",
             "h": "project_panel::CollapseSelectedEntry",
             "j": "menu::SelectNext",
             "k": "menu::SelectPrevious",
             "l": "project_panel::ExpandSelectedEntry",
-            "o": "project_panel::OpenPermanent",
-            "shift-d": "project_panel::Delete",
-            "shift-r": "project_panel::Rename",
-            "t": "project_panel::OpenPermanent",
-            "v": "project_panel::OpenPermanent",
-            "p": "project_panel::Open",
-            "x": "project_panel::RevealInFileManager",
-            "s": "project_panel::OpenWithSystem",
+            "o": "project_panel::OpenWithSystem",
             "] c": "project_panel::SelectNextGitEntry",
             "[ c": "project_panel::SelectPrevGitEntry",
             "] d": "project_panel::SelectNextDiagnostic",
@@ -1530,8 +1522,11 @@
             "}": "project_panel::SelectNextDirectory",
             "{": "project_panel::SelectPrevDirectory",
             "shift-g": "menu::SelectLast",
-            "g g": "menu::SelectFirst",
-            "-": "project_panel::SelectParent"
+            "-": "project_panel::SelectParent",
+            "shift-n": "project_panel::NewDirectory",
+            "r": "project_panel::Rename",
+            "n": "project_panel::NewFile",
+            "d": "project_panel::Delete"
         }
     },
     {
