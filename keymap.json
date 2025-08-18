@@ -109,6 +109,12 @@
             "cmd-3": "workspace::ToggleRightDock"
         }
     },
+    {
+        "context": "AgentPanel > MessageEditor",
+        "bindings": {
+            "escape": "editor::Cancel"
+        }
+    },
     // Editor
     {
         "context": "Editor",
