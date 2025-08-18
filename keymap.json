@@ -1634,5 +1634,13 @@
         "bindings": {
             "enter": "agent::Chat"
         }
+    },
+    {
+        "context": "Editor && mode == full && VimControl && multibuffer",
+        "bindings": {
+            "enter": "editor::OpenExcerpts",
+            "ctrl-f": "editor::MoveToStartOfNextExcerpt",
+            "ctrl-b": "editor::MoveToStartOfExcerpt"
+        }
     }
 ]
