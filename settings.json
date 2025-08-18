@@ -503,7 +503,7 @@
     // Inlay hint related settings
     "inlay_hints": {
         // Global switch to toggle hints on and off, switched off by default.
-        "enabled": true,
+        "enabled": false,
         // Toggle certain types of hints on and off, all switched on by default.
         "show_type_hints": true,
         "show_parameter_hints": false,
@@ -543,7 +543,7 @@
         // Where to dock the project panel. Can be 'left' or 'right'.
         "dock": "left",
         // Spacing between worktree entries in the project panel. Can be 'comfortable' or 'standard'.
-        "entry_spacing": "comfortable",
+        "entry_spacing": "standard",
         // Whether to show file icons in the project panel.
         "file_icons": true,
         // Whether to show folder icons or chevrons for directories in the project panel.
@@ -555,7 +555,7 @@
         // Whether to reveal it in the project panel automatically,
         // when a corresponding project entry becomes active.
         // Gitignored entries are never auto revealed.
-        "auto_reveal_entries": true,
+        "auto_reveal_entries": false,
         // Whether to fold directories automatically and show compact folders
         // (e.g. "a/b/c" ) when a directory has only one subdirectory inside.
         "auto_fold_dirs": true,
