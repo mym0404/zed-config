@@ -11,7 +11,8 @@
     {
         "label": "commit & push",
         "command": "PUSH",
-        "use_new_terminal": false
+        "use_new_terminal": false,
+        "reveal": "no_focus"
     },
     {
         "label": "Example task",
