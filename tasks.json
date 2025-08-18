@@ -12,7 +12,7 @@
         "label": "commit & push",
         "command": "PUSH",
         "use_new_terminal": false,
-        "reveal": "no_focus"
+        "reveal": "never"
     },
     {
         "label": "Example task",
