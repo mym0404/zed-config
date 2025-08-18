@@ -6,13 +6,15 @@
         "label": "start lazygit",
         "command": "lazygit",
         "use_new_terminal": true,
-        "reveal_target": "center"
+        "reveal_target": "center",
+        "hide": "always"
     },
     {
         "label": "commit & push",
         "command": "PUSH",
         "use_new_terminal": false,
-        "reveal": "never"
+        "reveal": "never",
+        "hide": "on_success"
     },
     {
         "label": "Example task",
