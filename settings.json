@@ -1565,7 +1565,7 @@
         "TypeScript": {
             "language_servers": ["!typescript-language-server", "vtsls", "..."],
             "code_actions_on_format": {
-                "source.organizeImports": true,
+                // "source.organizeImports": true,
                 "source.fixAll.eslint": true,
                 "source.fixAll.biome": true,
                 "source.organizeImports.biome": true
@@ -1578,7 +1578,7 @@
         "TSX": {
             "language_servers": ["!typescript-language-server", "vtsls", "..."],
             "code_actions_on_format": {
-                "source.organizeImports": true,
+                // "source.organizeImports": true,
                 "source.fixAll.eslint": true,
                 "source.fixAll.biome": true,
                 "source.organizeImports.biome": true
@@ -1591,7 +1591,7 @@
         "JavaScript": {
             "language_servers": ["!typescript-language-server", "vtsls", "..."],
             "code_actions_on_format": {
-                "source.organizeImports": true,
+                // "source.organizeImports": true,
                 "source.fixAll.eslint": true,
                 "source.fixAll.biome": true,
                 "source.organizeImports.biome": true
