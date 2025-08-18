@@ -11,7 +11,7 @@
     {
         "label": "commit & push",
         "command": "PUSH",
-        "use_new_terminal": false,
+        "use_new_terminal": true,
         "reveal_target": "center"
     },
     {
