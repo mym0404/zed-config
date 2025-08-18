@@ -10,7 +10,7 @@
         "light": "One Light",
         "dark": "MJStudioDark"
     },
-    "icon_theme": "Zed (Default)",
+    "icon_theme": "Catppuccin Frappé",
     // The name of a base set of key bindings to use.
     // This setting can take six values, each named after another
     // text editor:
@@ -54,7 +54,7 @@
     "buffer_line_height": "comfortable",
     // The name of a font to use for rendering text in the UI
     // You can set this to ".SystemUIFont" to use the system font
-    "ui_font_family": ".SystemUIFont",
+    "ui_font_family": "D2Coding",
     // Set the UI's font fallbacks, this will be merged with the platform's
     // default font fallbacks.
     "ui_font_fallbacks": null,
@@ -66,7 +66,7 @@
     // The weight of the UI font in standard CSS units from 100 to 900.
     "ui_font_weight": 400,
     // The default font size for text in the UI
-    "ui_font_size": 13,
+    "ui_font_size": 15,
     // The default font size for text in the agent panel
     "agent_font_size": 14,
     // How much to fade out unused code.
