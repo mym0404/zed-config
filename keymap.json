@@ -898,8 +898,10 @@
             "pagedown": "vim::PageDown",
             "ctrl-b": "vim::PageUp",
             "pageup": "vim::PageUp",
-            "ctrl-d": "vim::ScrollDown",
-            "ctrl-u": "vim::ScrollUp",
+            "ctrl-d": ["workspace::SendKeystrokes", "f19 z z"],
+            "ctrl-u": ["workspace::SendKeystrokes", "f20 z z"],
+            "f19": "vim::ScrollDown",
+            "f20": "vim::ScrollUp",
             "ctrl-e": "vim::LineDown",
             "ctrl-y": "vim::LineUp",
             // "g" commands
