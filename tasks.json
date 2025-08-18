@@ -13,7 +13,7 @@
         "label": "commit & push",
         "command": "PUSH",
         "use_new_terminal": false,
-        "reveal": "never",
+        "reveal": "no_focus",
         "hide": "on_success"
     },
     {
