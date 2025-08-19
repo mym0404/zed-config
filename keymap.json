@@ -6,8 +6,8 @@
         "context": "",
         "bindings": {
             "ctrl-w": null,
-            "alt-l": "vim::ResizePaneRight",
-            "alt-h": "vim::ResizePaneLeft",
+            "alt-l": "vim::ResizePaneLeft",
+            "alt-h": "vim::ResizePaneRight",
             "alt-j": "vim::ResizePaneDown",
             "alt-k": "vim::ResizePaneUp",
             "ctrl-h": "workspace::ActivatePaneLeft",
@@ -20,6 +20,13 @@
             "cmd-w": "pane::CloseActiveItem",
             "cmd-shift-f": "pane::DeploySearch",
             "cmd-shift-r": ["pane::DeploySearch", { "replace_enabled": true }]
+        }
+    },
+    {
+        "context": "GitPanel || Editor",
+        "bindings": {
+            "alt-l": "vim::ResizePaneRight",
+            "alt-h": "vim::ResizePaneLeft"
         }
     },
     {

@@ -539,7 +539,7 @@
         // Whether to hide the gitignore entries in the project panel.
         "hide_gitignore": false,
         // Default width of the project panel.
-        "default_width": 240,
+        "default_width": 300,
         // Where to dock the project panel. Can be 'left' or 'right'.
         "dock": "left",
         // Spacing between worktree entries in the project panel. Can be 'comfortable' or 'standard'.
@@ -662,7 +662,7 @@
         // Where to dock the collaboration panel. Can be 'left' or 'right'.
         "dock": "left",
         // Default width of the collaboration panel.
-        "default_width": 240
+        "default_width": 300
     },
     "chat_panel": {
         // When to show the chat panel button in the status bar.
@@ -672,7 +672,7 @@
         // Where to the chat panel. Can be 'left' or 'right'.
         "dock": "right",
         // Default width of the chat panel.
-        "default_width": 240
+        "default_width": 300
     },
     "git_panel": {
         // Whether to show the git panel button in the status bar.
@@ -729,7 +729,7 @@
         // Where to dock the agent panel. Can be 'left', 'right' or 'bottom'.
         "dock": "right",
         // Default width when the agent panel is docked to the left or right.
-        "default_width": 640,
+        "default_width": 360,
         // Default height when the agent panel is docked to the bottom.
         "default_height": 320,
         // The default model to use when creating new threads.
