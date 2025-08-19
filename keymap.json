@@ -23,7 +23,7 @@
     }
   },
   {
-    "context": "GitPanel || Editor || ProjectPanel",
+    "context": "!(AgentPanel > MessageEditor > Editor) && (GitPanel || Editor || ProjectPanel)",
     "bindings": {
       "alt-l": "vim::ResizePaneRight",
       "alt-h": "vim::ResizePaneLeft"
