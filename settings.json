@@ -284,11 +284,11 @@
     // Whether to automatically add matching closing characters when typing
     // opening parenthesis, bracket, brace, single or double quote characters.
     // For example, when you type (, Zed will add a closing ) at the correct position.
-    "use_autoclose": true,
+    "use_autoclose": false,
     // Whether to automatically surround selected text when typing opening parenthesis,
     // bracket, brace, single or double quote characters.
     // For example, when you select text and type (, Zed will surround the text with ().
-    "use_auto_surround": true,
+    "use_auto_surround": false,
     // Whether indentation of pasted content should be adjusted based on the context.
     "auto_indent_on_paste": true,
     // Controls how the editor handles the autoclosed characters.
@@ -1029,7 +1029,7 @@
     // spaces.
     "hard_tabs": false,
     // How many columns a tab should occupy.
-    "tab_size": 4,
+    "tab_size": 2,
     // What debuggers are preferred by default for all languages.
     "debuggers": [],
     // Control what info is collected by Zed.
