@@ -1653,5 +1653,11 @@
       "ctrl-n": "search::SelectNextMatch",
       "ctrl-shift-n": "search::SelectPreviousMatch"
     }
+  },
+  {
+    "context": "Editor && multibuffer && mode == full",
+    "bindings": {
+      "z o": "editor::ExpandExcerpts"
+    }
   }
 ]
