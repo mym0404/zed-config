@@ -1632,11 +1632,26 @@
     }
   },
   {
+    "context": "ProjectSearchBar > Editor",
+    "bindings": {
+      "ctrl-shift-n": null
+    }
+  },
+  {
     "context": "Editor && mode == full && VimControl && multibuffer",
     "bindings": {
       "enter": "editor::OpenExcerpts",
       "ctrl-f": "editor::MoveToStartOfNextExcerpt",
-      "ctrl-b": "editor::MoveToStartOfExcerpt"
+      "ctrl-b": "editor::MoveToStartOfExcerpt",
+      "ctrl-n": "search::SelectNextMatch",
+      "ctrl-shift-n": "search::SelectPreviousMatch"
+    }
+  },
+  {
+    "context": "ProjectSearchBar  > Editor",
+    "bindings": {
+      "ctrl-n": "search::SelectNextMatch",
+      "ctrl-shift-n": "search::SelectPreviousMatch"
     }
   }
 ]
