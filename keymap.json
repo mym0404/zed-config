@@ -1370,6 +1370,7 @@
     "bindings": {
       "space g r": "git::RestoreFile",
       "space g d": "editor::ToggleSelectedDiffHunks",
+      "space g D": "git::Diff",
       "space g o": "editor::ExpandAllDiffHunks",
       "space c r": "editor::Rename"
     }
