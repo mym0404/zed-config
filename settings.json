@@ -8,7 +8,7 @@
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "MJStudioDark"
+    "dark": "One Dark"
   },
   "icon_theme": "Catppuccin Frappé",
   // The name of a base set of key bindings to use.
@@ -38,7 +38,7 @@
     "calt": false
   },
   // The default font size for text in the editor
-  "buffer_font_size": 13,
+  "buffer_font_size": 12,
   // The weight of the editor font in standard CSS units from 100 to 900.
   "buffer_font_weight": 400,
   // Set the buffer's line height.
@@ -66,9 +66,9 @@
   // The weight of the UI font in standard CSS units from 100 to 900.
   "ui_font_weight": 400,
   // The default font size for text in the UI
-  "ui_font_size": 15,
+  "ui_font_size": 12,
   // The default font size for text in the agent panel
-  "agent_font_size": 13,
+  "agent_font_size": 12,
   // How much to fade out unused code.
   "unnecessary_code_fade": 0.3,
   // Active pane styling settings.
@@ -739,9 +739,9 @@
     // The default model to use when creating new threads.
     "default_model": {
       // The provider to use.
-      "provider": "zed.dev",
+      "provider": "google",
       // The model to use.
-      "model": "claude-sonnet-4"
+      "model": "gemini-2.5-flash"
     },
     // Additional parameters for language model requests. When making a request to a model, parameters will be taken
     // from the last entry in this list that matches the model's provider and name. In each entry, both provider
@@ -1086,7 +1086,7 @@
       "update_debounce_ms": 75,
       // The amount of padding between the end of the source line and the start
       // of the inline diagnostic in units of em widths.
-      "padding": 4,
+      "padding": 1,
       // The minimum column to display inline diagnostics. This setting can be
       // used to horizontally align inline diagnostics at some true. Lines
       // longer than this value will still push diagnostics further to the right.
