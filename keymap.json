@@ -1570,7 +1570,8 @@
       "shift-n": "project_panel::NewDirectory",
       "r": "project_panel::Rename",
       "n": "project_panel::NewFile",
-      "d": "project_panel::Delete"
+      "d": "project_panel::Delete",
+      "y": "workspace::CopyRelativePath"
     }
   },
   {
