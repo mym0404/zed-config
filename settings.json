@@ -68,7 +68,7 @@
   // The default font size for text in the UI
   "ui_font_size": 15,
   // The default font size for text in the agent panel
-  "agent_font_size": 14,
+  "agent_font_size": 13,
   // How much to fade out unused code.
   "unnecessary_code_fade": 0.3,
   // Active pane styling settings.
@@ -721,6 +721,10 @@
   },
   "agent": {
     // Whether the agent is enabled.
+    "inline_assistant_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4"
+    },
     "enabled": true,
     /// What completion mode to start new threads in, if available. Can be 'normal' or 'burn'.
     "preferred_completion_mode": "normal",
@@ -1346,7 +1350,7 @@
     },
     // Set the terminal's font size. If this option is not included,
     // the terminal will default to matching the buffer's font size.
-    "font_size": 13,
+    "font_size": 12,
     // Set the terminal's font family. If this option is not included,
     // the terminal will default to matching the buffer's font family.
     // "font_family": "Zed Plex Mono",
