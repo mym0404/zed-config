@@ -8,7 +8,7 @@
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "One Dark"
+    "dark": "MJStudioDark"
   },
   "icon_theme": "Catppuccin Frappé",
   // The name of a base set of key bindings to use.
