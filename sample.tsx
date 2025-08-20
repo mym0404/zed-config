@@ -45,6 +45,7 @@ interface Repository<T extends { id: number }> {
   save(entity: T): Promise<T>;
   delete(id: number): Promise<boolean>;
 }
+export const a = 1;
 
 // Class with decorators (conceptual)
 class UserService implements Repository<User> {
