@@ -1083,7 +1083,7 @@
       "p": "vim::Paste",
       "shift-p": ["vim::Paste", { "preserve_clipboard": true }],
       "shift-r": "vim::SubstituteLine",
-      "shift-s": "vim::SubstituteLine",
+      // "shift-s": "vim::SubstituteLine",
       "~": "vim::ChangeCase",
       "*": ["vim::MoveToNext", { "partial_word": true }],
       "#": ["vim::MoveToPrevious", { "partial_word": true }],
@@ -1160,7 +1160,7 @@
       "u": "vim::Undo",
       "shift-u": "vim::UndoLastLine",
       "r": "vim::PushReplace",
-      "shift-s": "vim::SubstituteLine",
+      // "shift-s": "vim::SubstituteLine",
       "\"": "vim::PushRegister",
       "ctrl-pagedown": "pane::ActivateNextItem",
       "ctrl-pageup": "pane::ActivatePreviousItem"
