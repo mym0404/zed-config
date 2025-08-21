@@ -19,7 +19,8 @@
       "alt-cmd-w": "workspace::CloseInactiveTabsAndPanes",
       "cmd-w": "pane::CloseActiveItem",
       "cmd-shift-f": "pane::DeploySearch",
-      "cmd-shift-r": ["pane::DeploySearch", { "replace_enabled": true }]
+      "cmd-shift-r": ["pane::DeploySearch", { "replace_enabled": true }],
+      "cmd-shift-t": "task::Spawn"
     }
   },
   {
