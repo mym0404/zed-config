@@ -1574,7 +1574,7 @@
         "source.fixAll.biome": true,
         "source.organizeImports.biome": true
       },
-      // "formatter": { "language_server": { "name": "biome" } },
+      "formatter": { "language_server": { "name": "biome" } },
       "prettier": {
         "allowed": true
       }
@@ -1587,7 +1587,7 @@
         "source.fixAll.biome": true,
         "source.organizeImports.biome": true
       },
-      // "formatter": { "language_server": { "name": "biome" } },
+      "formatter": { "language_server": { "name": "biome" } },
       "prettier": {
         "allowed": true
       }
@@ -1600,9 +1600,9 @@
         "source.fixAll.biome": true,
         "source.organizeImports.biome": true
       },
-      // "formatter": {
-      //     "language_server": { "name": "biome" }
-      // },
+      "formatter": {
+        "language_server": { "name": "biome" }
+      },
       "prettier": {
         "allowed": true
       }

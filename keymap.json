@@ -1573,7 +1573,8 @@
       "r": "project_panel::Rename",
       "n": "project_panel::NewFile",
       "d": "project_panel::Delete",
-      "y": "workspace::CopyRelativePath"
+      "y": "workspace::CopyRelativePath",
+      "y y": "workspace::CopyPath"
     }
   },
   {
