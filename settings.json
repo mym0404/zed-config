@@ -1438,7 +1438,15 @@
   // If you don't want any of these extensions, add this field to your settings
   // and change the value to `false`.
   "auto_install_extensions": {
-    "html": true
+    "html": true,
+    "biome": true,
+    "catppuccin": true,
+    "color-highlight": true,
+    "colored-zed-icons-theme": true,
+    "git-firefly": true,
+    "hacker-theme": true,
+    "mcp-server-github": true,
+    "tokyo-night": true
   },
   // Controls how completions are processed for this language.
   "completions": {
