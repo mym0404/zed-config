@@ -1580,11 +1580,11 @@
       "language_servers": ["!typescript-language-server", "vtsls", "..."],
       "code_actions_on_format": {
         // "source.organizeImports": true,
-        "source.fixAll.eslint": true,
-        "source.fixAll.biome": true,
-        "source.organizeImports.biome": true
+        "source.fixAll.eslint": true
+        // "source.fixAll.biome": true,
+        // "source.organizeImports.biome": true
       },
-      "formatter": { "language_server": { "name": "biome" } },
+      // "formatter": { "language_server": { "name": "biome" } },
       "prettier": {
         "allowed": true
       }
@@ -1593,11 +1593,11 @@
       "language_servers": ["!typescript-language-server", "vtsls", "..."],
       "code_actions_on_format": {
         // "source.organizeImports": true,
-        "source.fixAll.eslint": true,
-        "source.fixAll.biome": true,
-        "source.organizeImports.biome": true
+        "source.fixAll.eslint": true
+        // "source.fixAll.biome": true,
+        // "source.organizeImports.biome": true
       },
-      "formatter": { "language_server": { "name": "biome" } },
+      // "formatter": { "language_server": { "name": "biome" } },
       "prettier": {
         "allowed": true
       }
@@ -1606,13 +1606,13 @@
       "language_servers": ["!typescript-language-server", "vtsls", "..."],
       "code_actions_on_format": {
         // "source.organizeImports": true,
-        "source.fixAll.eslint": true,
-        "source.fixAll.biome": true,
-        "source.organizeImports.biome": true
+        "source.fixAll.eslint": true
+        // "source.fixAll.biome": true,
+        // "source.organizeImports.biome": true
       },
-      "formatter": {
-        "language_server": { "name": "biome" }
-      },
+      // "formatter": {
+      //   "language_server": { "name": "biome" }
+      // },
       "prettier": {
         "allowed": true
       }
@@ -1779,9 +1779,7 @@
     //     }
     // }
     "biome": {
-      "settings": {
-        "require_config_file": true
-      }
+      "settings": { "config_path": "./biome.json", "require_config_file": true }
     },
     "vtsls": {
       "settings": {
