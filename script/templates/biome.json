@@ -43,12 +43,7 @@
       }
     },
     "JavaScript": {
-      "language_servers": [
-        "!eslint",
-        "biome",
-        "vtsls",
-        "..."
-      ],
+      "language_servers": ["!eslint", "biome", "vtsls", "..."],
       "formatter": {
         "language_server": {
           "name": "biome"
@@ -60,6 +55,18 @@
       },
       "prettier": {
         "allowed": false
+      }
+    },
+    "JSON": {
+      "language_servers": ["!biome", "..."],
+      "prettier": {
+        "allowed": true
+      }
+    },
+    "JSONC": {
+      "language_servers": ["!biome", "..."],
+      "prettier": {
+        "allowed": true
       }
     }
   },
