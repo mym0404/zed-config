@@ -3,7 +3,7 @@
 // Example:
 [
   {
-    "label": "start lazygit",
+    "label": "⚡️start lazygit",
     "command": "lazygit",
     "use_new_terminal": true,
     "reveal_target": "center",
@@ -13,7 +13,7 @@
     }
   },
   {
-    "label": "commit & push",
+    "label": "⚡️commit & push",
     "command": "PUSH",
     "use_new_terminal": true,
     "reveal": "no_focus",
@@ -21,7 +21,7 @@
     "reveal_target": "dock"
   },
   {
-    "label": "Live Grep",
+    "label": "⚡️live grep",
     "command": "zed \"$(tv text --input-header 'Search Everywhere')\"",
     "hide": "on_success",
     "allow_concurrent_runs": true,
@@ -30,6 +30,22 @@
     "shell": {
       "program": "sh"
     }
+  },
+  {
+    "label": "⚡️create biome zed settings",
+    "command": "node ~/.config/zed/script/create_biome_project_settings.cjs",
+    "use_new_terminal": true,
+    "reveal": "always",
+    "hide": "on_success",
+    "reveal_target": "dock"
+  },
+  {
+    "label": "⚡️create eslint zed settings",
+    "command": "node ~/.config/zed/script/create_eslint_prettier_project_settings.cjs",
+    "use_new_terminal": true,
+    "reveal": "always",
+    "hide": "on_success",
+    "reveal_target": "dock"
   }
   // {
   //     "label": "Example task",
