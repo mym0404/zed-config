@@ -44,6 +44,18 @@
       "prettier": {
         "allowed": true
       }
+    },
+    "JSON": {
+      "language_servers": ["!biome", "..."],
+      "prettier": {
+        "allowed": true
+      }
+    },
+    "JSONC": {
+      "language_servers": ["!biome", "..."],
+      "prettier": {
+        "allowed": true
+      }
     }
   }
 }
