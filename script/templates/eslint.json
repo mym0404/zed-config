@@ -38,8 +38,6 @@
         "vtsls",
         "..."
       ],
-      "formatter": "prettier",
-      "format_on_save": "on",
       "code_actions_on_format": {
         "source.fixAll.eslint": true
       },
