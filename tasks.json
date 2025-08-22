@@ -33,7 +33,7 @@
   },
   {
     "label": "⚡️create biome zed settings",
-    "command": "node ~/.config/zed/script/create_biome_project_settings.cjs",
+    "command": "node ~/.config/zed/script/create_zed_project_settings.cjs biome",
     "use_new_terminal": true,
     "reveal": "always",
     "hide": "on_success",
@@ -41,7 +41,7 @@
   },
   {
     "label": "⚡️create eslint zed settings",
-    "command": "node ~/.config/zed/script/create_eslint_prettier_project_settings.cjs",
+    "command": "node ~/.config/zed/script/create_zed_project_settings.cjs eslint",
     "use_new_terminal": true,
     "reveal": "always",
     "hide": "on_success",
