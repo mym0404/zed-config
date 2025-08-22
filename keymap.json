@@ -1335,7 +1335,7 @@
       "|": "vim::VerticalBars",
       "(": "vim::Parentheses",
       ")": "vim::Parentheses",
-      "b": "vim::Parentheses",
+      "b": "vim::AnyBrackets",
       // "b": "vim::AnyBrackets",
       // "b": "vim::MiniBrackets",
       "[": "vim::SquareBrackets",

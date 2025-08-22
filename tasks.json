@@ -22,8 +22,8 @@
   },
   {
     "label": "Live Grep",
-    "command": "zed \"$(tv text)\"",
-    "hide": "always",
+    "command": "zed \"$(tv text --input-header 'Search Everywhere')\"",
+    "hide": "on_success",
     "allow_concurrent_runs": true,
     "reveal_target": "center",
     "use_new_terminal": true,
