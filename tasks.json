@@ -3,7 +3,7 @@
 // Example:
 [
   {
-    "label": "⚡️start lazygit",
+    "label": "[MJ] start lazygit",
     "command": "lazygit",
     "use_new_terminal": true,
     "reveal_target": "center",
@@ -13,7 +13,7 @@
     }
   },
   {
-    "label": "⚡️commit & push",
+    "label": "[MJ] commit & push",
     "command": "PUSH",
     "use_new_terminal": true,
     "reveal": "no_focus",
@@ -21,7 +21,7 @@
     "reveal_target": "dock"
   },
   {
-    "label": "⚡️live grep",
+    "label": "[MJ] live grep",
     "command": "zed \"$(tv text --input-header 'Search Everywhere')\"",
     "hide": "on_success",
     "allow_concurrent_runs": true,
@@ -32,7 +32,7 @@
     }
   },
   {
-    "label": "⚡️create biome zed settings",
+    "label": "[MJ] create biome zed settings",
     "command": "node ~/.config/zed/script/create_zed_project_settings.cjs biome",
     "use_new_terminal": true,
     "reveal": "always",
@@ -40,7 +40,7 @@
     "reveal_target": "dock"
   },
   {
-    "label": "⚡️create eslint zed settings",
+    "label": "[MJ] create eslint zed settings",
     "command": "node ~/.config/zed/script/create_zed_project_settings.cjs eslint",
     "use_new_terminal": true,
     "reveal": "always",
