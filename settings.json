@@ -25,7 +25,7 @@
   // Features that can be globally enabled or disabled
   "features": {
     // Which edit prediction provider to use.
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "copilot"
   },
   // The name of a font to use for rendering text in the editor
   "buffer_font_family": "D2Coding",
@@ -1194,7 +1194,8 @@
     // },
     // Whether edit predictions are enabled when editing text threads.
     // This setting has no effect if globally disabled.
-    "enabled_in_text_threads": true
+    "enabled_in_text_threads": true,
+    "copilot": {}
   },
   // Settings specific to journaling
   "journal": {
