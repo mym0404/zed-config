@@ -724,7 +724,7 @@
     // Whether the agent is enabled.
     "inline_assistant_model": {
       "provider": "anthropic",
-      "model": "claude-sonnet-4-latest"
+      "model": "gemini-2.5-flash"
     },
     "enabled": true,
     /// What completion mode to start new threads in, if available. Can be 'normal' or 'burn'.

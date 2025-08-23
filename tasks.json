@@ -22,8 +22,8 @@
   },
   {
     "label": "[MJ] live grep",
-    "command": "zed \"$(tv text --input-header 'Search Everywhere')\"",
-    "hide": "on_success",
+    "command": "zed \"$(tv text --input-header 'Search Everywhere' --cache-preview --preview-size 80)\"",
+    "hide": "always",
     "allow_concurrent_runs": true,
     "reveal_target": "center",
     "use_new_terminal": true,
