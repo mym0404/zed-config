@@ -18,7 +18,7 @@
       "cmd-0": "pane::SplitHorizontal",
       "alt-cmd-w": "workspace::CloseInactiveTabsAndPanes",
       "cmd-w": "pane::CloseActiveItem",
-      "cmd-shift-f": ["task::Spawn", { "task_name": "Live Grep" }],
+      "cmd-shift-f": ["task::Spawn", { "task_name": "[MJ] live grep" }],
       // "cmd-shift-f": "pane::DeploySearch",
       "cmd-shift-r": ["pane::DeploySearch", { "replace_enabled": true }],
       "cmd-shift-t": "task::Spawn"
@@ -37,7 +37,7 @@
       "space b o": "workspace::CloseInactiveTabsAndPanes",
       "space b d": "pane::CloseActiveItem",
       "space k": ["workspace::SendKeystrokes", "cmd-5 claude enter"],
-      "space g g": ["task::Spawn", { "task_name": "start lazygit" }],
+      "space g g": ["task::Spawn", { "task_name": "[MJ] start lazygit" }],
       "space t": "task::Spawn",
       "space a e": "assistant::InlineAssist",
       "space a a": "agent::NewThread"
