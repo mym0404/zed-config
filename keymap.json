@@ -40,7 +40,7 @@
       "space g g": ["task::Spawn", { "task_name": "[MJ] start lazygit" }],
       "space t": "task::Spawn",
       "space a e": "assistant::InlineAssist",
-      "space a a": "agent::NewThread"
+      "space a a": ["agent::NewExternalAgentThread", { "agent": "claude_code" }]
     }
   },
   {
@@ -64,25 +64,19 @@
   {
     "context": "GitPanel",
     "bindings": {
-      "cmd-2": "workspace::ToggleLeftDock"
+      "cmd-`": "workspace::ToggleLeftDock"
     }
   },
   {
     "context": "!GitPanel",
     "bindings": {
-      "cmd-2": "git_panel::ToggleFocus"
-    }
-  },
-  {
-    "context": "!Editor",
-    "bindings": {
-      "cmd-4": "editor::ToggleFocus"
+      "cmd-`": "git_panel::ToggleFocus"
     }
   },
   {
     "context": "Terminal",
     "bindings": {
-      "cmd-5": "workspace::ToggleRightDock",
+      "cmd-3": "workspace::ToggleRightDock",
       "cmd-t": "workspace::NewTerminal",
       "cmd-[": "pane::ActivatePreviousItem",
       "cmd-]": "pane::ActivateNextItem"
@@ -91,31 +85,25 @@
   {
     "context": "!Terminal",
     "bindings": {
-      "cmd-5": "terminal_panel::ToggleFocus"
+      "cmd-3": "terminal_panel::ToggleFocus"
     }
   },
   {
     "context": "!Diagnostics",
     "bindings": {
-      "cmd-4": "diagnostics::Deploy"
+      "cmd-6": "diagnostics::Deploy"
     }
   },
   {
     "context": "Diagnostics",
     "bindings": {
-      "cmd-4": "pane::CloseActiveItem"
+      "cmd-6": "pane::CloseActiveItem"
     }
   },
   {
     "context": "!AgentPanel",
     "bindings": {
-      "cmd-3": "agent::ToggleFocus"
-    }
-  },
-  {
-    "context": "AgentPanel",
-    "bindings": {
-      "cmd-3": "workspace::ToggleRightDock"
+      "cmd-4": "agent::ToggleFocus"
     }
   },
   {
@@ -161,6 +149,11 @@
       "ctrl-g": "go_to_line::Toggle",
       "cmd-shift-backspace": "editor::GoToPreviousChange",
       "cmd-shift-alt-backspace": "editor::GoToNextChange"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-2": "editor::ToggleFocus"
     }
   },
   {
@@ -840,6 +833,8 @@
       "] =": "vim::NextSameIndent",
       "] b": "pane::ActivateNextItem",
       "[ b": "pane::ActivatePreviousItem",
+      "cmd-[": "pane::ActivateNextItem",
+      "cmd-]": "pane::ActivatePreviousItem",
       "] shift-b": "pane::ActivateLastItem",
       "[ shift-b": ["pane::ActivateItem", 0],
       "] space": "vim::InsertEmptyLineBelow",

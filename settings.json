@@ -25,7 +25,7 @@
   // Features that can be globally enabled or disabled
   "features": {
     // Which edit prediction provider to use.
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "zed"
   },
   // The name of a font to use for rendering text in the editor
   "buffer_font_family": "D2Coding",
@@ -40,7 +40,7 @@
   // The default font size for text in the editor
   "buffer_font_size": 12,
   // The weight of the editor font in standard CSS units from 100 to 900.
-  "buffer_font_weight": 400,
+  "buffer_font_weight": 500.0,
   // Set the buffer's line height.
   // May take 3 values:
   //  1. Use a line height that's comfortable for reading (1.618)
@@ -66,7 +66,7 @@
   // The weight of the UI font in standard CSS units from 100 to 900.
   "ui_font_weight": 400,
   // The default font size for text in the UI
-  "ui_font_size": 14,
+  "ui_font_size": 14.0,
   // The default font size for text in the agent panel
   "agent_ui_font_size": 12,
   // How much to fade out unused code.
